@@ -11,7 +11,6 @@ class MultiplicationCircleSpec extends GebSpec {
 
     void "Changing segment count with JavaScript"() {
         when:
-        browser.driver.javascriptEnabled = true
         go '/multiplicationCircle.html'
         then:
         title == "Multiplication Circle"
