@@ -9,10 +9,6 @@ import grails.testing.mixin.integration.Integration
 @Integration
 class MultiplicationCircleSpec extends GebSpec {
 
-    def setup() {
-        browser.driver.javascriptEnabled = true
-    }
-
     void "Changing segment count with JavaScript"() {
         when:
         go '/multiplicationCircle.html'
